@@ -4,12 +4,14 @@ defmodule BotArmyAuditorReportGenerator.MixProject do
   def project do
     [
       app: :bot_army_auditor_report_generator,
-      version: "0.1.0",
+      version: "0.1.1",
       elixir: "~> 1.14",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       releases: [
-        report_generator_bot: [
+        auditor_report_generator_bot: [
+          applications: [bot_army_auditor_report_generator: :permanent]
+        ]
           applications: [bot_army_auditor_report_generator: :permanent]
         ]
       ]
