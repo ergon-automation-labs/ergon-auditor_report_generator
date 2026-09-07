@@ -12,8 +12,6 @@ defmodule BotArmyAuditorReportGenerator.MixProject do
         auditor_report_generator_bot: [
           applications: [bot_army_auditor_report_generator: :permanent]
         ]
-          applications: [bot_army_auditor_report_generator: :permanent]
-        ]
       ]
     ]
   end
